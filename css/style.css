@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&family=Roboto:ital@0;1&display=swap');
+*{
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* ---------------------body--------------------- */
+body{
+    background-image: url(../img/background-wood.jpg);
+    padding: 0px;
+    margin: 0px;
+}
+/* --------------------navbar-------------------- */
+.container-fluid{
+    text-align:center;
+    margin-left: 15px;
+}
+.navbar ul li a{
+    border-radius: 35px;
+    font-size: 20px;
+    padding: 10px;
+    margin: 5px 10px;
+}
+.navbar ul li a:hover{
+    background-color: rgb(80, 90, 50);
+}
+.navbar{
+    opacity: 96%;
+    box-shadow: 0px 5px 10px 1px rgb(30, 30, 30);
+}
+/* --------------------section-inicio------------------ */
+.encabezado-inicio{
+    background-image: url(../img/portada.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 900px;
+}
+.tarjetas-inicio{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 100%;
+    padding: 80px;
+}
+.card{
+    background-color: rgb(30, 30, 30);
+    margin: 40px;
+}
+.card:hover{
+    transition-property: all;
+    transition-duration: 1s;
+    transform: scale(1.02);
+}
+.card-body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    margin: 10px 0px 5px 0px;
+}
+.card-title{
+    padding: 10px;
+    font-size: 30px;
+}
+.card-text{
+    font-size: 20px;
+    padding: 10px;
+}
+.btn{
+    font-size: 20px;
+}
+.btn:hover{
+    background-color: rgb(80, 90, 50);
+}
+/* ------------------presentacion-card-inicio----------- */
+.tarjetas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px -15px 15px 10px rgb(20, 20, 20);
+    background-color: rgb(20, 20, 20);
+    color: #ffffff;
+    height: 100%;
+    padding: 80px;
+}
+/* -------------------presentacion-productos----------- */
+.encabezado-productos{
+    background-image: url(../img/beers.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+}
+.tarjetas-formatos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px;
+    margin: 5px;
+}
+/* ------------------section-eventos------------ */
+.encabezado-eventos{
+    background-image: url(../img/fest-right.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+}
+/* ------------------eventos-grid---------------- */
+.grid-container{
+    display: grid;
+    grid-template-rows: repeat(5, 10rem);
+    grid-template-columns: 100px auto 100px;
+    grid-gap: 0px;
+    width: 100%;
+    height: 40vh;
+}
+.grid-item1,.grid-item5{
+    grid-area: 1/ span 3;
+}
+.grid-item3{
+    grid-area: 2/ span 3;
+}
+.grid-item5{
+    grid-area: 1 / span 2;
+}
+.grid-item1,.grid-item2,.grid-item3,
+.grid-item4,.grid-item5{
+    background-color: rgba(30, 30, 30, 0.514);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 10vh;
+}
+.grid-item1:hover,.grid-item2:hover,
+.grid-item3:hover,.grid-item4:hover,
+.grid-item5:hover{
+    background-image: url(../img/background-wood.jpg);
+    transition-property: all;
+    transition-duration: 1s;
+    transform: scale(1.05);
+}
+.fila{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px;
+    padding: 10px;
+}
+.fila img{
+    width: 100%;
+}
+.fila img:hover{
+    transition-property: all;
+    transition-duration: 1s;
+    transform: scale(1.025);
+}
+.column{
+    flex: 25%;
+    padding: 5px;
+    margin: 5px;
+}
+/* ---------------@medeia------------- */
+@media all and (max-width: 768px){
+    .tarjetas-formatos{
+        width: 100%;
+    }
+    .column{
+        flex: 50%;
+    }
+    .grid-item1{
+        grid-area: 1/ span 3;
+    }
+    .grid-item2{
+        grid-area: 2 / span 3;
+    }
+    .grid-item3{
+        grid-area: 3/ span 3;
+    }
+    .grid-item4{
+        grid-area: 4/ span 3;
+    }
+    .grid-item5{
+        grid-area: 5/ span 3;
+    }
+    .grid-container{
+        padding: 10px;
+        height: 10%;
+    }
+}
+@media (max-width: 420px){
+    .column{
+        flex: 100%;
+    }
+    .grid-container{
+        width: 100%;
+    }
+}
+/* --------------section-contactos--------------- */
+.encabezado-contacto{
+    background-image: url(../img/redes.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+}
+.section-contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15vh;
+    margin: 30px;
+}
+/* --------------section-nosotros--------------- */ 
+.encabezado-nosotros{
+    background-image: url(../img/background-madera.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 550px;
+}
+.section-nosotros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15vh;
+    margin: 30px;
+}
+/* --------------formulario-email--------------- */
+.formulario{
+    background-color: #242e20;
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 15px;
+}
+/* --------------------footer------------------- */
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(30, 30, 30);
+    padding: 3rem;
+}
+.firma{
+    color: #ffffff;
+    padding: 15px;
+}
+.icon{
+    width: 45px;
+    margin: 15px;
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="icon" type="icon" href="./img/favicon.ico">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>cerveceria-consoli</title>
+</head>
+<body>
+<!---------------------------------------header--------------------->
+<header>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../img/logo-portada.png" width="70rem" alt="logo de la cerveceria">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./section/productos.html">PRODUCTOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./section/eventos.html">EVENTOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./section/contactos.html">CONTACTO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./section/nosotros.html">NOSOTROS</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<!--------------------main-section------------>
+<main data-aos="fade-up">
+    <section>
+        <div class="encabezado-inicio">
+            <img src="./img/logo-portada-blanco.png" class="img-fluid" alt="consoli craft beer">
+        </div>
+    </section>
+    <section class="tarjetas-inicio">
+        <div class="card border border-4" style="width: 40rem">
+            <img src="./img/estilos.jpg" class="card-img-bottom" alt="estilos de cervezas">
+            <div class="card-body">
+                <h5 class="card-title">Nuestros Estilos</h5>
+                <p class="card-text">Tenemos los estilos mas populares de cerveza artesanal</p>
+                <a href="./section/productos.html" class="btn btn-secondary">CONOCER MAS</a>
+            </div>
+        </div>
+        <div class="card border border-4" style="width: 40rem">
+            <img src="./img/amigos.jpg" class="card-img-top" alt="ingredientes">
+            <div class="card-body">
+                <h5 class="card-title">Donde Estamos</h5>
+                <p class="card-text">Podes encontrarnos en varios bares de zona sur</p>
+                <a href="./section/productos.html" class="btn btn-secondary">CONOCER MAS</a>
+            </div>
+        </div>
+    </section>
+        <div class="tarjetas">
+            <div class="card border border-4" style="height: 20rem; width: 35rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Pedi a Domicilio</h5>
+                    <p class="card-text">Hacemos repartos por zona sur</p>
+                    <a href="./section/productos.html" class="btn btn-secondary">CONOCER MAS</a>
+                </div>
+            </div>
+            <div class="card border border-4" style="height: 20rem; width: 35rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Take-Away</h5>
+                    <p class="card-text">Podes retirar por la fabrica</p>
+                    <a href="./section/productos.html" class="btn btn-secondary">CONOCER MAS</a>
+                </div>
+            </div>
+            <div class="card border border-4" style="height: 20rem; width: 35rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Somos Eco-Friendly</h5>
+                    <p class="card-text">Ayudamos al medio ambiente</p>
+                    <a href="./section/productos.html" class="btn btn-secondary">CONOCER MAS</a>
+                </div>
+            </div>
+        </div>
+    </section>
+<!------------------------formulario------>
+    <section class="formulario">
+        <article>
+            <p>¿Te gusta la cerveza tanto como a nosotros? ¡Suscríbete para recibir promociones!</p>
+            <form action="#">
+                <label for="email"></label>
+                <input type="email" placeholder="Ingresa tu email" name="email">
+                <input class="boton-sub" type="submit" value="Suscribirse">
+            </form>
+        </article>
+    </section>
+</main>
+<!------------------------footer----------->
+<footer>
+    <div>
+        <p class="firma">© 2023 Developer Facundo Ciullo</p>
+    </div>
+    <div>
+        <a href="https://api.whatsapp.com/send?phone=5491139125701&text=CONSOLI" target="_blank">
+        <img class="icon" src="./img/icon-whatsapp.svg" alt="ícono de whatsaap">
+        </a>
+        <a href="https://www.instagram.com/cerveceriaconsoli/" target="_blank">
+        <img class="icon" src="./img/icon-instagram.svg" alt="ícono de instagram">
+        </a>
+        <a href="https://www.facebook.com/search/top?q=consoli%20cerveza%20artesanal" target="_blank">
+        <img class="icon" src="./img/icon-facebook.svg" alt="ícono de facebook">
+        </a>
+    </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+</body>
+</html>
